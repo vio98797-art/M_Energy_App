@@ -1,0 +1,7 @@
+com.menergy.creditledger-pngs-0 /data/data/com.termux/files/home/M_Energy_App/build/generated/res/pngs/debug
+com.menergy.creditledger-resValues-1 /data/data/com.termux/files/home/M_Energy_App/build/generated/res/resValues/debug
+com.menergy.creditledger-packageDebugResources-2 /data/data/com.termux/files/home/M_Energy_App/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.menergy.creditledger-packageDebugResources-3 /data/data/com.termux/files/home/M_Energy_App/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.menergy.creditledger-debug-4 /data/data/com.termux/files/home/M_Energy_App/build/intermediates/merged_res/debug/mergeDebugResources
+com.menergy.creditledger-debug-5 /data/data/com.termux/files/home/M_Energy_App/src/debug/res
+com.menergy.creditledger-main-6 /data/data/com.termux/files/home/M_Energy_App/src/main/res

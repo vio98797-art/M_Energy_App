@@ -1,0 +1,17 @@
+R_DEF: Internal format may change without notice
+local
+id btnSave
+id etAmount
+id etName
+id listView
+id rbPay
+id rbReceive
+id rgType
+id tvItemAmount
+id tvItemDate
+id tvItemName
+id tvTotalPay
+id tvTotalReceive
+layout activity_main
+layout item_ledger
+string app_name

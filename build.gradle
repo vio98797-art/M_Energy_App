@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application' version '8.4.0'
+}
+
+android {
+    namespace 'com.menergy.creditledger'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.menergy.creditledger"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
