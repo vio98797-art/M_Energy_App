@@ -23,7 +23,6 @@ jobs:
 
       - name: Build with Gradle Wrapper
         run: |
-          cd "$GITHUB_WORKSPACE/M_Energy_App"
           chmod +x gradlew
           ./gradlew assembleDebug
 
@@ -31,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: M-Energy-Debug-APK
-          path: M_Energy_App/app/build/outputs/apk/debug/*.apk
+          path: app/build/outputs/apk/debug/*.apk
