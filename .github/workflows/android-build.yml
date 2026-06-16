@@ -2,7 +2,7 @@ name: Android CI/CD
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -12,14 +12,23 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Verify files
+        run: |
+          pwd
+          ls -la
+          find . -maxdepth 2 -name "gradlew"
+
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
-          distribution: 'temurin'
+          java-version: "17"
+          distribution: "temurin"
 
-      - name: Build with Gradle
-        run: chmod +x gradlew && ./gradlew assembleDebug
+      - name: Build with Gradle Wrapper
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          chmod +x gradlew
+          ./gradlew assembleDebug
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
